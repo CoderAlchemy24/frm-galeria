@@ -41,7 +41,7 @@ export default function HomePage() {
              
               />
               <div className='texts'>
-                <h3 >{p.name}</h3>
+                <h1 >{p.name}</h1>
                 <p >{p.artist.name}</p>
               
               </div>

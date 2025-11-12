@@ -1,8 +1,8 @@
 
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  /* background: var(--background);
+  color: var(--foreground); */
   font-family: 'Libre BasketVille', sans-serif;
 }
 
@@ -86,12 +86,33 @@ button:hover{
     height: auto;
 }
 
-.texts h3{
+.texts{
+  position: relative;
+  top: -80px;
+  left: 30px;
+}
+
+.texts h1{
   margin: 0; 
   color: #FFFFFF; 
+  font-size: 20px;
+
+   font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    
+   
 }
 
 .texts p{
-  margin: 0.25rem 0 0;
-   color: #FFFFFF;
+  margin: 0.25rem 0 ;
+  
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    color: #7D7D7D;
 }
