@@ -74,3 +74,24 @@ button:hover{
   color:black;
   cursor: pointer;
 }
+
+.image-wrapper{
+    width: 100%;
+}
+
+.image-wrapper img{
+    object-fit: cover;
+    display: block; 
+    width: 100%; 
+    height: auto;
+}
+
+.texts h3{
+  margin: 0; 
+  color: #FFFFFF; 
+}
+
+.texts p{
+  margin: 0.25rem 0 0;
+   color: #FFFFFF;
+}

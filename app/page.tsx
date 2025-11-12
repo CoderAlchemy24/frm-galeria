@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { paintings } from '../lib/paintings';
+import styles from './home.module.css';
 
 
 type PaintingCard = {
@@ -31,18 +32,17 @@ export default function HomePage() {
         const targetH = gw && gh ? Math.round((targetW * gh) / gw) : 310;
         return (
           <Link key={p.slug} href={`/galleria/${p.slug}`} className="grid-item">
-            <div style={{  width: '100%' }}>
-              <Image
+            <div className='image-wrapper' >
+              <img
                 src={p.images.gallery}
                 alt={p.name}
                 width={targetW}
                 height={targetH}
-                style={{ objectFit: 'cover', display: 'block', width: '100%', height: 'auto'}}
-                priority={false}
+             
               />
-              <div className='text-container'>
-                <h3 style={{ margin: 0, color: '#FFFFFF' }}>{p.name}</h3>
-                <p style={{ margin: '0.25rem 0 0', color: '#FFF' }}>{p.artist.name}</p>
+              <div className='texts'>
+                <h3 >{p.name}</h3>
+                <p >{p.artist.name}</p>
               
               </div>
             </div>

@@ -10,7 +10,7 @@ export default function SlideshowToggle(){
   };
 
   return (
-    <button onClick={handleSlideshowToggle}>
+    <button type="button" onClick={handleSlideshowToggle}>
       {slideshowActive ? 'STOP SLIDESHOW' : 'START SLIDESHOW'}
     </button>
   );
