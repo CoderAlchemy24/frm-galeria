@@ -31,7 +31,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/CoderAlchemy24/frm-galeria.git](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Live Site URL: [https://frm-galeria.netlify.app/](https://your-live-site-url.com)
 
 ## My process
 
