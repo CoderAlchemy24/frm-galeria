@@ -1,0 +1,406 @@
+.details-page{
+    background-color: white;
+    color:black;
+    padding-top: 0px;
+    padding-bottom: 20px;;
+   
+}
+
+.section-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap:50px;
+   
+    margin: 64px 24px 40px 24px;
+   border-bottom: '1px solid #D7D7D7' ;
+}
+
+.column1{
+    width:848px;
+    height:624px;
+}
+
+.painting-wrapper{
+    width:475px;
+    height:624px;
+    
+}
+
+.painting-wrapper img{
+    display: block;
+    width:475px;
+    height:560px;
+}
+
+.inner{
+    width: 20%;
+    height:fit-content;
+    position: relative;
+   
+    left: 322px;
+    top: -624px; 
+
+    z-index: 1;
+    background-color: white;
+    padding:24px 48px;
+}
+
+.name-and-author{
+    width:380px;
+    height:172px;
+
+    z-index: 3;
+    background-color: transparent;
+   
+}
+
+.painting_name{
+
+     font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 56px;;
+    line-height: 115%;
+    color:black;
+
+    width:300px;
+    white-space: normal;
+    word-break: normal;
+    overflow-wrap: break-word;
+    
+    padding: 0 24px 24px 0;;
+}
+
+.artist_name{
+     font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 15px;;
+    line-height: 135%;
+    color:#D7D7D7;
+    
+    padding-top: 0;
+}
+
+.artist{
+   
+    position: relative;
+    top:281px;
+    left:20px;
+  
+
+}
+.column2{
+    width:476px;
+    height:565px;
+
+    
+}
+
+.year{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 200px;;
+    letter-spacing: -0.2px;
+    color: #F3F3F3;
+
+    z-index: 15;;
+  
+}
+
+.description-wrapper{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  
+}
+
+.description-wrapper p{
+
+     position: relative;
+     top: -164px;
+    left:0;
+     width: 350px;
+    height:350px;
+
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 200%;
+    letter-spacing: -0.25px;
+    color: #7D7D7D;
+}
+
+.source-link{
+    
+    color:#7D7D7D;
+    position: relative;
+    top:-120px;
+}
+
+.footer{
+    display:'flex'; 
+    flex-direction:'row'; 
+    justify-content:'space-between';
+
+    margin-left:24px;
+    margin-right:24px;    
+}
+
+.footer-text{
+    border-top: 1px solid black;
+    width:40%;
+    padding-top: 16px;;
+
+}
+
+.footer-text h3{
+
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 125%;
+    letter-spacing: -0.25px;
+    color: black;
+    margin-bottom: 10px;
+
+}
+
+.footer-text h4{
+
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    color: #7D7D7D;
+
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap:6px;
+    
+    margin-right: 32px;
+    margin-top:-32px;
+    
+}
+
+.back, .forward{
+    margin:0;
+    padding:0;
+}
+
+.forward{
+    transform: rotate(180deg);
+    margin-left:0;
+}
+
+/***************************************************/
+@media (max-width: 1023px) {
+ 
+ .section-container{
+ 
+  margin: 45px auto;
+  flex-direction: column;
+  gap:0px;
+ }
+ 
+ .painting-wrapper,
+  .column2{
+   width:672px;
+   height:fit-content;
+   margin: 20px auto;
+ }
+    .inner{
+    width: 445px;
+    height:auto;
+    background-color: transparent;
+    padding:26px 48px;
+}
+  .name-and-author{
+    width: 96%;
+    height: fit-content;
+    margin:0;
+    padding:25px;
+    position: relative;
+    left:-162px;
+    background-color: white;
+    
+  
+  }
+
+  .artist{
+    margin-top: 0;
+    padding-top: 0;
+    position: relative;
+    top:0;
+    left: 35%;
+  }
+
+  .column2{
+    width: 100%;
+    height:auto;
+    margin: 0px 48px;
+    padding:5px;
+  }
+
+  .year{
+   text-align: left;
+   margin:10px 40px 0;
+
+   z-index:5;
+  }
+
+  .description-wrapper{
+    width:100%;
+    height:auto;
+    margin: auto 160px 0;
+  }
+
+  .description-wrapper p{
+    margin: 0;
+  }
+
+}
+/*************************************************/
+  @media (max-width: 860px) {
+
+   .details-page ,
+    .section-container,
+     .column1,
+      .painting-wrapper,
+      .inner,
+      .column2,
+      
+      .footer{
+        position: static;
+        margin: 0 auto;
+   
+    
+  }
+
+  .details-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:64px;
+    margin: 16px auto;
+  }
+
+  .column1{
+    margin: 16px auto 0;
+    width: 90%;
+
+    height:auto;
+  
+    
+  }
+  .inner{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+
+     position: relative;
+    top: -50%;
+    left: -15%;
+
+  }
+
+  .name-and-author{
+    background-color: white;
+   
+
+     margin: -60px 104px 40px;
+  }
+
+  .painting_name{
+    width: 92%;
+    margin: 10px 140px 10px 18px;
+    padding:10px;
+
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 125%;
+    letter-spacing: 0px;
+    color: black;
+  }
+
+  .artist-name{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 135%;
+    letter-spacing: 0px;
+    color: #7D7D7D;
+    padding-left: 34px;
+  }
+
+  .artist{
+    position: static;
+    top:-110px;
+  }
+
+    .column2{
+    width: 282px;
+    height: 468px;
+  
+    margin: 40px auto;
+   }
+
+   .year{
+    width:240px;
+    height: auto;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 700;
+    font-size: 100px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    color: #F3F3F3;
+    text-align: right;
+
+    margin:-90px auto;
+   }
+
+   .description-wrapper{
+     width:90%;
+     
+
+     margin: 180px 10px 60px -130px;
+   }
+
+   .description-wrapper p{
+
+  
+    margin: 30px auto ;
+  text-align: left;
+   }
+ 
+   .footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+
+   }
+
+  .nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    
+  }
+
+}
