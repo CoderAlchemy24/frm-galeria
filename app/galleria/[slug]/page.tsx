@@ -42,9 +42,7 @@ export default async function PaintingPage({ params }: { params: Promise<Params>
           <img
               src={painting.images.hero.large}
               alt={painting.name}
-              
-              width="100%"
-              height= "auto"
+            
              
           />
         </div> 
